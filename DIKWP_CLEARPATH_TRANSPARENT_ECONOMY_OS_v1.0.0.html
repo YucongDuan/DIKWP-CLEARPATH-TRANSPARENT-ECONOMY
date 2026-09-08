@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,15 +8,17 @@
 :root{--ink:#152238;--muted:#5d6b7d;--line:#d9e1ea;--panel:#fff;--bg:#f3f6fa;--deep:#17324d;--accent:#2f6f8f;--warn:#9a6700;--bad:#a52a2a;--good:#1f6b45}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.45}.wrap{max-width:1440px;margin:auto;padding:20px}.hero{background:linear-gradient(135deg,#17324d,#285f78);color:#fff;padding:26px;border-radius:20px;box-shadow:0 12px 32px rgba(23,50,77,.18)}.hero h1{margin:0 0 8px;font-size:clamp(25px,4vw,42px)}.hero p{margin:5px 0;max-width:1020px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.toolbar button,.toolbar select,.btn{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.10);color:inherit;padding:9px 13px;border-radius:10px;cursor:pointer}.toolbar button:hover{background:rgba(255,255,255,.18)}nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.tabbtn{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 14px;border-radius:10px;cursor:pointer}.tabbtn.active{background:var(--deep);color:#fff}.tab{display:none}.tab.active{display:block}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.col6{grid-column:span 6}.col4{grid-column:span 4}.col8{grid-column:span 8}.col12{grid-column:span 12}.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 5px 16px rgba(30,50,75,.06)}.panel h2,.panel h3{margin-top:0}.fieldgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.field{display:flex;flex-direction:column;gap:5px}.field label{font-size:13px;color:var(--muted)}input,textarea,select{width:100%;border:1px solid #cbd5df;border-radius:9px;padding:9px;background:#fff;color:var(--ink)}textarea{min-height:74px;resize:vertical}input[type=range]{padding:0}.small{font-size:12px;color:var(--muted)}.btn{background:var(--deep);color:#fff;border-color:var(--deep)}.btn.alt{background:#fff;color:var(--ink);border-color:var(--line)}.btn.warn{background:#7b4f00;border-color:#7b4f00}.buttons{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.kpi{padding:14px;border:1px solid var(--line);border-radius:13px;background:#fbfcfe}.kpi b{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}.kpi strong{font-size:22px}.status{font-size:25px;font-weight:800;letter-spacing:.02em}.status.GO_NOW{color:var(--good)}.status.TEST_CHEAPLY{color:#286b87}.status.PIVOT_TO_COMPLEMENT{color:var(--warn)}.status.NO_CURRENT_VIABLE_PATH{color:var(--bad)}table{width:100%;border-collapse:collapse;background:#fff}th,td{border-bottom:1px solid var(--line);padding:9px;text-align:left;vertical-align:top}th{background:#eaf1f6;font-size:13px}tbody tr:hover{background:#f7f9fc}.matrix{overflow:auto}.matrix table input{min-width:60px}.callout{padding:14px;border-left:4px solid var(--accent);background:#edf5f9;border-radius:8px}.warning{border-left-color:#a66a00;background:#fff5d9}.danger{border-left-color:#9d2d2d;background:#fdecec}.good{border-left-color:#1f6b45;background:#eaf7f0}.bar{height:10px;background:#e5ebf1;border-radius:999px;overflow:hidden}.bar span{display:block;height:100%;background:var(--accent)}ul.compact{margin:7px 0;padding-left:20px}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:4px 8px;font-size:12px;margin:2px;background:#fff}.footer{padding:25px 0;color:var(--muted);font-size:12px}.hidden{display:none}@media(max-width:900px){.col6,.col4,.col8{grid-column:span 12}.fieldgrid{grid-template-columns:1fr}.wrap{padding:12px}.hero{padding:20px}}
 </style>
+<meta name="author" content="Yucong Duan (段玉聪)">
 </head>
 <body>
 <div class="wrap">
 <section class="hero">
 <h1 id="title">DIKWP ClearPath 透明机会经济系统</h1>
+<p data-project-creator="true" style="font-size:.9rem;line-height:1.5;opacity:.85;margin:.5rem 0 1rem">Created by Yucong Duan (段玉聪).</p>
 <p id="subtitle">在模型内化软件能力、通用技能快速商品化之后，判断一条具体经济路径仍有付费空间，还是已经应当停止投入。</p>
 <p><b id="rule">结论评价的是“机会路径 × 当前约束”，不是人的智力、尊严或永久价值。</b></p>
 <div class="toolbar">
-<select id="lang"><option value="zh">简体中文</option><option value="en">English</option></select>
+<select id="lang"><option value="zh">简体中文</option><option value="en" selected>English</option></select>
 <button onclick="loadPreset('generic')" id="presetGeneric">预设：泛化 AI 微型软件</button>
 <button onclick="loadPreset('sme')" id="presetSme">预设：本地行业流程构建</button>
 <button onclick="loadPreset('care')" id="presetCare">预设：本地照护导航</button>
@@ -176,5 +178,122 @@ document.querySelectorAll('.tabbtn').forEach(b=>b.onclick=()=>{document.querySel
 document.getElementById('importFile').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const v=JSON.parse(r.result);if(v.opportunity){for(const [k,val] of Object.entries(v.opportunity)){const map={title:'oppTitle',customer_segment:'segment',funded_slots_12m:'slots',qualified_supply_now:'supplyNow',new_supply_12m:'newSupply',automation_rate:'automation',price_per_outcome:'price',variable_cost_per_outcome:'variableCost',entry_cost:'entryCost',time_to_first_revenue_months:'timeRevenue',required_weekly_hours:'requiredHours',remaining_lifetime_months:'lifetime',top10_supplier_share:'top10',training_seats_marketed:'trainingSeats',training_price:'trainingPrice',marketing_certainty:'marketing',demand_growth_rate:'demandGrowth',supply_growth_rate:'supplyGrowth',customer_access_requirement:'reqCustomer',trust_requirement:'reqTrust',distribution_requirement:'reqDistribution',regulatory_requirement:'reqRegulated',local_execution_requirement:'reqLocal',accountability_share:'accountability',physical_world_share:'physical',local_context_share:'localContext'};if(map[k]&&document.getElementById(map[k]))document.getElementById(map[k]).value=val}}if(v.person){const map={purpose:'purpose',weekly_hours:'weeklyHours',runway_months:'runway',experiment_budget:'budget',risk_tolerance:'risk',customer_access:'customer',trust_access:'trust',distribution_access:'distribution',local_execution:'local',regulated_access:'regulated'};for(const [k,id] of Object.entries(map))if(v.person[k]!==undefined)document.getElementById(id).value=v.person[k];if(v.person.transformations)for(const [tr,val] of Object.entries(v.person.transformations)){const id='m_'+tr.replace('->','_');if(document.getElementById(id))document.getElementById(id).value=val.score??val}}analyze()}catch(err){alert(err.message)}};r.readAsText(f)};
 document.getElementById('lang').onchange=()=>{const L=t[lang()];document.getElementById('title').textContent=L.title;document.getElementById('subtitle').textContent=L.subtitle;document.getElementById('rule').textContent=L.rule;if(currentAnalysis){currentAnalysis.world_results.forEach((x,i)=>x.world_name=lang()==='zh'?WORLDS[i].nameZh:WORLDS[i].nameEn);renderResult()}};
 initMatrix();loadPreset('sme');
+</script>
+
+<script id="yd-interface-config" type="application/json">{"nativeSelect":"#lang","messages":{"未来世界":"Future worlds","导出":"Export","导入":"Import","可行路径":"Feasible routes","个月":"months","天":"days","受治理的增强扩散":"Governed diffusion of augmentation","能力快速商品化":"Rapid commoditization of capabilities","赢家通吃的平台集中":"Winner-take-all platform concentration","本地信任与责任重新打开空间":"Local trust and accountability reopen opportunities","AGI级劳动价值压缩":"AGI-level compression of labor value","现在进入":"Enter now","低成本验证":"Test at low cost","转向互补价值":"Shift toward complementary value","当前路径不可行":"No currently viable route","没有硬关闭理由。":"No hard closure reason.","不确定":"Uncertain","声明基线":"Declared baseline","泛化 AI 微型 SaaS 构建":"Generic AI micro-SaaS development","全球自助用户":"Global self-service users","本地中小企业流程与 Agent 集成构建":"Local SME workflow and agent integration","本地业主经营型中小企业":"Local owner-operated SMEs","本地照护与公共服务导航":"Local care and public-service navigation","家庭、社区组织与公共项目":"Households, community organizations and public programs","照护":"Care","模型":"Model","中文":"中文","能力":"Capability","名称":"Name","小时":"Hours","证据":"Evidence","目的":"Purpose","数据":"Data","允许":"Allowed","生成":"Generate","DIKWP ClearPath 透明机会经济系统":"DIKWP ClearPath Transparent Opportunity Economy","在模型内化软件能力、通用技能快速商品化之后，判断一条具体经济路径仍有付费空间，还是已经应当停止投入。":"Assess whether a specific economic opportunity retains paying demand as models absorb software capabilities and general skills become widely available.","结论评价的是“机会路径 × 当前约束”，不是人的智力、尊严或永久价值。":"The assessment concerns an opportunity under current constraints, not a person's intelligence, dignity or enduring worth.","简体中文":"Simplified Chinese","预设：泛化 AI 微型软件":"Preset: generic AI microsoftware","预设：本地行业流程构建":"Preset: local industry workflow","预设：本地照护导航":"Preset: local care navigation","导出工作区 JSON":"Export workspace JSON","导入 JSON":"Import JSON","出路判定":"Opportunity assessment","DIKWP 能力矩阵":"DIKWP capability matrix","培训与机会诚信":"Training and opportunity integrity","透明贡献分配":"Transparent contribution allocation","透明经济宪法":"Transparent-economy principles","A. 个体的现实约束与入口":"A. Personal constraints and access","当前目的":"Current purpose","找到一条能在90天内取得第一笔真实付费收据、且不依赖继续购买泛化课程的路径。":"Find a route to a first genuine payment receipt within 90 days without depending on further purchases of general courses.","每周可投入小时":"Available hours per week","可承受无收入月数":"Affordable months without income","试错预算":"Experiment budget","风险承受度 0-1":"Risk tolerance, 0–1","直接客户入口 0-1":"Direct customer access, 0–1","信任关系 0-1":"Trusted relationships, 0–1","分发入口 0-1":"Distribution access, 0–1","本地现实执行 0-1":"Practical local delivery, 0–1","资质/制度入口 0-1":"Qualification or institutional access, 0–1","这些数据只在本浏览器会话中计算；公开能力卡不会输出现金、家庭、健康或政治宗教信息。":"Calculations stay in this browser session. The public capability card omits cash, family, health, political and religious information.","B. 机会真相表":"B. Opportunity evidence","机会名称":"Opportunity name","付费客户":"Paying customer","未来12月真实付费名额":"Genuine paying opportunities over 12 months","当前合格供给者":"Currently qualified providers","未来12月新增供给者":"Expected new providers over 12 months","可被模型直接替代比例 0-1":"Share directly replaceable by a model, 0–1","每个成果付费":"Payment per outcome","每个成果变动成本":"Variable cost per outcome","进入试验成本":"Cost of an entry experiment","首笔付费所需月数":"Months to first payment","每周所需小时":"Required hours per week","机会剩余寿命（月）":"Remaining opportunity lifetime, months","前10名供给者份额 0-1":"Top-ten provider share, 0–1","对外售卖培训席位":"Training seats offered","每个培训席位价格":"Price per training seat","宣传确定性 0-1":"Certainty asserted in marketing, 0–1","高级：需求增长、壁垒与不可商品化部分":"Advanced: demand growth, barriers and noncommoditized needs","分析：找到出路或关闭路径":"Analyze the opportunity","导出分析 JSON":"Export analysis JSON","导出报告 Markdown":"Export report as Markdown","选择预设或填写数据后开始分析。系统允许输出“当前没有可行路径”，并给出重新开放所需条件。":"Choose a preset or enter data to begin. A result may find no current viable route and state what would need to change.","基础可行度":"Baseline viability","多世界最低值":"Minimum across scenarios","供给/付费容量":"Supply relative to paid capacity","付费名额覆盖":"Paid-opportunity coverage","机会半衰期":"Opportunity half-life","机会漂白风险":"Opportunity-laundering risk","关闭理由":"Reasons to stop","重新开放条件":"Conditions for reopening","DIKWP 瓶颈":"DIKWP bottlenecks","五种未来世界":"Five future scenarios","世界":"Scenario","可行度":"Viability","饱和度":"Saturation","现实行动":"Practical action","DIKWP 存储与 25 条转换能力":"DIKWP storage and 25 transformation capabilities","每个格子是“在特定任务中把一个语义层转换到另一个语义层”的能力证据，0表示没有证据，5表示多次真实结果验证。它不是一般智力或人的价值。":"Each cell records evidence of a particular semantic transformation: 0 means no evidence and 5 means repeated real-world verification. It does not measure general intelligence or personal worth.","培训与机会诚信审计":"Training and opportunity integrity audit","关键问题不是“课程有没有内容”，而是培训席位与真实剩余付费机会是否匹配。":"Compare training capacity with the remaining genuine paid opportunities, alongside the content of the course.","运行审计":"Run audit","反“机会漂白”规则":"Rules against opportunity laundering","必须披露未来12个月真实付费名额。":"Disclose genuine paying opportunities over the next 12 months.","必须披露当前合格供给及预计新增供给。":"Disclose qualified providers and expected new entrants.","不得把工具学习人数当成就业需求。":"Do not count people learning a tool as employment demand.","当“剩余付费名额/培训席位”低于10%时，应给出显著晚进入警告。":"Clearly flag late-entry risk when remaining paid opportunities cover less than 10% of training seats.","培训收入超过下游声明机会价值时，不能继续把课程包装成普遍出路。":"When training revenue exceeds the stated value of downstream opportunities, do not market the course as a broadly available route to income.","透明贡献分配提案":"Contribution-allocation proposal","项目预算":"Project budget","贡献 JSON（行为，而非人格）":"Contribution JSON: actions, not personality","生成分配提案":"Generate allocation proposal","系统只生成透明提案，不自动付款。":"The tool prepares a transparent proposal; it does not make payments.","透明机会经济六层":"Six layers of the transparent opportunity economy","禁止偷换":"Distinctions to preserve","当前":"Current","售卖":"Sales","价格":"Price","审计":"Audit","公开":"Public","技能":"Skills","风险":"Risk","治理":"Governance","停止":"Stop","依赖":"Dependence","系统":"System","内容":"Content","一般":"General","健康":"Health","关系":"Relationships","问题":"Question","家庭":"Household"}}</script>
+<script>
+/* Interface localization. Creator: Yucong Duan (段玉聪). */
+(() => {
+  'use strict';
+  const configuration = document.getElementById('yd-interface-config');
+  if (!configuration) return;
+  const config = JSON.parse(configuration.textContent);
+  const dictionary = new Map(Object.entries(config.messages || {}).map(([a, b]) => [a.trim().replace(/\s+/g, ' '), b]));
+  const numeric = /\d[\d,]*(?:\.\d+)?/g;
+  const templates = [];
+  const escapePattern = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  for (const [source, target] of dictionary) {
+    const a = source.match(numeric) || [], b = target.match(numeric) || [];
+    if (!a.length || a.length > 12 || a.length !== b.length || !a.every((v, i) => v.replace(/,/g, '') === b[i].replace(/,/g, ''))) continue;
+    const parts = source.split(numeric);
+    templates.push({pattern: new RegExp('^' + parts.map(escapePattern).join('(\\d[\\d,]*(?:\\.\\d+)?)') + '$'), parts: target.split(numeric)});
+  }
+  const textState = new WeakMap();
+  const attributeState = new WeakMap();
+  const attributes = ['title', 'placeholder', 'aria-label', 'alt', 'label'];
+  const excluded = 'script,style,pre,code,textarea,[contenteditable],[data-source-language],[data-project-creator]';
+  let language = 'en';
+  const originalTitle = document.title;
+
+  function translate(value) {
+    const key = value.trim().replace(/\s+/g, ' ');
+    let translated = dictionary.get(key);
+    if (translated === undefined && /[\u3400-\u9fff]/.test(key)) {
+      for (const template of templates) {
+        const match = key.match(template.pattern);
+        if (!match) continue;
+        translated = template.parts.map((part, i) => part + (match[i + 1] || '')).join('');
+        break;
+      }
+    }
+    if (translated === undefined) return value;
+    const leading = value.match(/^\s*/)[0];
+    const trailing = value.match(/\s*$/)[0];
+    return leading + translated + trailing;
+  }
+
+  function updateText(node) {
+    const parent = node.parentElement;
+    if (!parent || parent.closest(excluded)) return;
+    let saved = textState.get(node);
+    const current = node.nodeValue;
+    if (!saved || current !== saved.rendered) saved = { original: current, rendered: current };
+    const next = language === 'en' ? translate(saved.original) : saved.original;
+    if (next !== current) {
+      // Translating an option label must not change the value used by the application.
+      if (parent.tagName === 'OPTION' && !parent.hasAttribute('value')) parent.setAttribute('value', parent.textContent);
+      node.nodeValue = next;
+    }
+    saved.rendered = next;
+    textState.set(node, saved);
+  }
+
+  function updateAttributes(element) {
+    if (!element || element.closest(excluded)) return;
+    let saved = attributeState.get(element);
+    if (!saved) { saved = new Map(); attributeState.set(element, saved); }
+    for (const name of attributes) {
+      if (!element.hasAttribute(name)) continue;
+      // The label attribute is an interface label on these elements only.
+      if (name === 'label' && !['OPTION', 'OPTGROUP', 'TRACK'].includes(element.tagName)) continue;
+      const current = element.getAttribute(name);
+      let prior = saved.get(name);
+      if (!prior || current !== prior.rendered) prior = { original: current, rendered: current };
+      const next = language === 'en' ? translate(prior.original) : prior.original;
+      if (next !== current) element.setAttribute(name, next);
+      prior.rendered = next; saved.set(name, prior);
+    }
+  }
+
+  function visit(root) {
+    if (root.nodeType === Node.TEXT_NODE) { updateText(root); return; }
+    if (root.nodeType !== Node.ELEMENT_NODE || root.closest(excluded)) return;
+    updateAttributes(root);
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) updateText(walker.currentNode);
+    for (const element of root.querySelectorAll('[title],[placeholder],[aria-label],[alt],[label]')) updateAttributes(element);
+  }
+
+  function setLanguage(next) {
+    language = next === 'zh' ? 'zh' : 'en';
+    document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+    document.title = language === 'en' ? translate(originalTitle) : originalTitle;
+    visit(document.body);
+  }
+
+  function start() {
+    const select = config.nativeSelect ? document.querySelector(config.nativeSelect) : null;
+    const button = config.nativeButton ? document.querySelector(config.nativeButton) : null;
+    if (select) language = select.value === 'zh' ? 'zh' : 'en';
+    else if (config.storageKey) {
+      try { language = localStorage.getItem(config.storageKey) === 'zh' ? 'zh' : 'en'; } catch (_) { language = 'en'; }
+    }
+    setLanguage(language);
+    if (select) select.addEventListener('change', () => setLanguage(select.value));
+    if (button) button.addEventListener('click', () => setLanguage(language === 'en' ? 'zh' : 'en'));
+    const observer = new MutationObserver(records => {
+      for (const record of records) {
+        if (record.type === 'characterData') updateText(record.target);
+        else if (record.type === 'attributes') updateAttributes(record.target);
+        else for (const node of record.addedNodes) visit(node);
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: attributes });
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once: true });
+  else start();
+})();
+
 </script>
 </body></html>

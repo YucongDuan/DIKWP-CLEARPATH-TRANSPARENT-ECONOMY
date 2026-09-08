@@ -4,7 +4,9 @@
 
 # DIKWP ClearPath Transparent Opportunity Economy OS
 
-**Show the paid demand before selling the skill.**
+Created by Yucong Duan (段玉聪).
+
+Show the paid demand before selling the skill.
 
 ClearPath is an offline-first, open-source system for deciding whether a specific economic route still has funded room for a specific person under declared constraints. It combines:
 
@@ -73,9 +75,13 @@ Apache License 2.0. See `LICENSE`.
 
 - [Versioned release and original full delivery](https://github.com/YucongDuan/DIKWP-CLEARPATH-TRANSPARENT-ECONOMY/releases/tag/v1.0.0)
 - [Offline browser app](DIKWP_CLEARPATH_TRANSPARENT_ECONOMY_OS_v1.0.0.html) — download the source archive, extract it, then open this HTML file locally. GitHub's file viewer displays source.
-- [Publication verification](publication/VALIDATION_2026-09-08.md): **30 local tests passed** on 8 September 2026.
+- [Publication verification](publication/VALIDATION_2026-09-08.md): 30 local tests passed on 8 September 2026.
 - [Source](src/) · [Tests](tests/) · [Archive provenance](publication/PROVENANCE.json)
 
 ## Contribute a reproducible result
 
 Run an example, report a failing case with its expected result, or add a documented extension. Use synthetic or anonymized inputs. If useful, star the repository, cite its version and share its canonical link. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Current interface presentation
+
+[Open the interface source](DIKWP_CLEARPATH_TRANSPARENT_ECONOMY_OS_v1.0.0.html) from the current repository download. See [interface and authorship notes](INTERFACE_NOTES.md) for English coverage, report generation and validation scope.
