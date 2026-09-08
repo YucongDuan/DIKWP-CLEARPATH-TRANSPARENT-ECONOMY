@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dikwp.example/schemas/clearpath-contribution-v1.json",
+  "title": "ClearPath Contribution Proposal",
+  "type": "object",
+  "required": ["budget", "participant_pool", "platform_fee", "commons_return", "correction_reserve", "allocations", "settlement_status", "automatic_payment_authority"],
+  "properties": {
+    "budget": {"type": "number", "exclusiveMinimum": 0},
+    "participant_pool": {"type": "number", "minimum": 0},
+    "platform_fee": {"type": "number", "minimum": 0},
+    "commons_return": {"type": "number", "minimum": 0},
+    "correction_reserve": {"type": "number", "minimum": 0},
+    "allocations": {"type": "array"},
+    "settlement_status": {"const": "PROPOSAL_ONLY_NO_AUTOMATIC_PAYMENT"},
+    "automatic_payment_authority": {"const": 0}
+  },
+  "additionalProperties": true
+}

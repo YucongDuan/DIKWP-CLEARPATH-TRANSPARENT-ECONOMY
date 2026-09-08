@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-08",
+  "python": "3.12.13",
+  "unit_tests_passed": 30,
+  "unit_tests_failed": 0,
+  "additional_checks": [
+    {
+      "command": [
+        "python",
+        "scripts/validate_schemas.py"
+      ],
+      "returncode": 0,
+      "output": "{\n  \"checks\": [\n    {\n      \"errors\": [],\n      \"instance\": \"examples/person-profile.json\",\n      \"schema\": \"schemas/person.schema.json\",\n      \"valid\": true\n    },\n    {\n      \"errors\": [],\n      \"instance\": \"examples/generic-ai-microsaas.json\",\n      \"schema\": \"schemas/opportunity.schema.json\",\n      \"valid\": true\n    },\n    {\n      \"errors\": [],\n      \"instance\": \"examples/local-sme-workflow-builder.json\",\n      \"schema\": \"schemas/opportunity.schema.json\",\n      \"valid\": true\n    },\n    {\n      \"errors\": [],\n      \"instance\": \"examples/local-care-navigation.json\",\n      \"schema\": \"schemas/opportunity.schema.json\",\n      \"valid\": true\n    }\n  ],\n  \"passed\": true\n}\n"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/static_audit.py"
+      ],
+      "returncode": 0,
+      "output": "{\n  \"audited_python_files\": 19,\n  \"findings\": [],\n  \"note\": \"Static pattern audit is not a security certification.\",\n  \"passed\": true\n}\n"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/bounded_model_check.py"
+      ],
+      "returncode": 0,
+      "output": "{\n  \"checked_transitions\": 14,\n  \"invariant_violations\": [],\n  \"max_shortest_path_depth\": 5,\n  \"model\": \"TOEP-1000 bounded reference workflow\",\n  \"passed\": true,\n  \"reachable_phases\": [\n    \"ANALYZED\",\n    \"CLOSED\",\n    \"CORRECTED\",\n    \"DRAFT\",\n    \"EVIDENCED\",\n    \"GO\",\n    \"PIVOT\",\n    \"TEST\"\n  ],\n  \"reachable_states\": 13,\n  \"scope\": \"FINITE_REFERENCE_ABSTRACTION_NOT_UNIVERSAL_PROOF\"\n}\n"
+    }
+  ],
+  "remote_ci_status": "SEE_GITHUB_ACTIONS_FOR_COMMIT",
+  "scope": "Local synthetic software checks; not empirical economic validation or independent certification."
+}

@@ -1,0 +1,19 @@
+{
+  "checked_transitions": 14,
+  "invariant_violations": [],
+  "max_shortest_path_depth": 5,
+  "model": "TOEP-1000 bounded reference workflow",
+  "passed": true,
+  "reachable_phases": [
+    "ANALYZED",
+    "CLOSED",
+    "CORRECTED",
+    "DRAFT",
+    "EVIDENCED",
+    "GO",
+    "PIVOT",
+    "TEST"
+  ],
+  "reachable_states": 13,
+  "scope": "FINITE_REFERENCE_ABSTRACTION_NOT_UNIVERSAL_PROOF"
+}

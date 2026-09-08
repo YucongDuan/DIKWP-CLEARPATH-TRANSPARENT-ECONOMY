@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "errors": [],
+      "instance": "examples/person-profile.json",
+      "schema": "schemas/person.schema.json",
+      "valid": true
+    },
+    {
+      "errors": [],
+      "instance": "examples/generic-ai-microsaas.json",
+      "schema": "schemas/opportunity.schema.json",
+      "valid": true
+    },
+    {
+      "errors": [],
+      "instance": "examples/local-sme-workflow-builder.json",
+      "schema": "schemas/opportunity.schema.json",
+      "valid": true
+    },
+    {
+      "errors": [],
+      "instance": "examples/local-care-navigation.json",
+      "schema": "schemas/opportunity.schema.json",
+      "valid": true
+    }
+  ],
+  "passed": true
+}

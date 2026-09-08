@@ -1,0 +1,11 @@
+{
+  "uploaded_container": "Desktop(8).zip",
+  "upstream_archive": "DIKWP_CLEARPATH_TRANSPARENT_ECONOMY_v1.0.0_MILESTONE_FULL_DELIVERY.zip",
+  "archive_sha256": "af5af809345029cbfd977b8096e5c0461eac20c27103c312642da6aa1db902d4",
+  "archive_size_bytes": 9364391,
+  "release_tag": "v1.0.0",
+  "repository": "https://github.com/YucongDuan/DIKWP-CLEARPATH-TRANSPARENT-ECONOMY",
+  "publication_date": "2026-09-08",
+  "upstream_runtime_version_preserved": true,
+  "runtime_code_changes": false
+}

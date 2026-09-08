@@ -1,0 +1,158 @@
+{
+  "currency": "USD",
+  "customer_access": 0.42,
+  "distribution_access": 0.25,
+  "experiment_budget": 2500,
+  "local_execution": 0.7,
+  "private_constraints": {
+    "family_obligations": "synthetic",
+    "minimum_income_floor": 1800
+  },
+  "profile_id": "synthetic-person-001",
+  "purpose": "Find a paid transition path without spending more on a saturated generic skill.",
+  "regulated_access": 0.2,
+  "risk_tolerance": 0.38,
+  "runway_months": 6,
+  "storage": {
+    "D": 0.75,
+    "I": 0.7,
+    "K": 0.62,
+    "P": 0.66,
+    "W": 0.58
+  },
+  "transformations": {
+    "D->D": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "D->I": {
+      "receipts": [
+        "synthetic-d-i"
+      ],
+      "score": 4.0,
+      "stage": 6
+    },
+    "D->K": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "D->P": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "D->W": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "I->D": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "I->I": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "I->K": {
+      "receipts": [
+        "synthetic-i-k"
+      ],
+      "score": 3.8,
+      "stage": 6
+    },
+    "I->P": {
+      "receipts": [],
+      "score": 3.4,
+      "stage": 5
+    },
+    "I->W": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "K->D": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "K->I": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "K->K": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "K->P": {
+      "receipts": [],
+      "score": 3.2,
+      "stage": 5
+    },
+    "K->W": {
+      "receipts": [],
+      "score": 3.2,
+      "stage": 5
+    },
+    "P->D": {
+      "receipts": [],
+      "score": 3.4,
+      "stage": 5
+    },
+    "P->I": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "P->K": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "P->P": {
+      "receipts": [
+        "synthetic-p-p"
+      ],
+      "score": 3.8,
+      "stage": 6
+    },
+    "P->W": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "W->D": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "W->I": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "W->K": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    },
+    "W->P": {
+      "receipts": [],
+      "score": 3.5,
+      "stage": 5
+    },
+    "W->W": {
+      "receipts": [],
+      "score": 2.5,
+      "stage": 3
+    }
+  },
+  "trust_access": 0.55,
+  "weekly_hours": 12
+}

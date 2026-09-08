@@ -1,0 +1,186 @@
+{
+  "system": "DIKWP ClearPath Transparent Opportunity Economy OS",
+  "version": "1.0.0",
+  "generated_at_utc": "2026-09-07T04:01:30.132246+00:00",
+  "status": "RESEARCH_ALPHA_REFERENCE_IMPLEMENTATION",
+  "test_summary": {
+    "pytest_passed": 30,
+    "pytest_failed": 0
+  },
+  "source_metrics": {
+    "python_modules": 19,
+    "python_source_lines": 1375,
+    "repository_files_before_git": 94
+  },
+  "schema_validation": {
+    "checks": [
+      {
+        "errors": [],
+        "instance": "examples/person-profile.json",
+        "schema": "schemas/person.schema.json",
+        "valid": true
+      },
+      {
+        "errors": [],
+        "instance": "examples/generic-ai-microsaas.json",
+        "schema": "schemas/opportunity.schema.json",
+        "valid": true
+      },
+      {
+        "errors": [],
+        "instance": "examples/local-sme-workflow-builder.json",
+        "schema": "schemas/opportunity.schema.json",
+        "valid": true
+      },
+      {
+        "errors": [],
+        "instance": "examples/local-care-navigation.json",
+        "schema": "schemas/opportunity.schema.json",
+        "valid": true
+      }
+    ],
+    "passed": true
+  },
+  "static_audit": {
+    "audited_python_files": 19,
+    "findings": [],
+    "note": "Static pattern audit is not a security certification.",
+    "passed": true
+  },
+  "bounded_model_check": {
+    "checked_transitions": 14,
+    "invariant_violations": [],
+    "max_shortest_path_depth": 5,
+    "model": "TOEP-1000 bounded reference workflow",
+    "passed": true,
+    "reachable_phases": [
+      "ANALYZED",
+      "CLOSED",
+      "CORRECTED",
+      "DRAFT",
+      "EVIDENCED",
+      "GO",
+      "PIVOT",
+      "TEST"
+    ],
+    "reachable_states": 13,
+    "scope": "FINITE_REFERENCE_ABSTRACTION_NOT_UNIVERSAL_PROOF"
+  },
+  "release_audit": {
+    "forbidden_findings": [],
+    "missing_required_files": [],
+    "passed": true
+  },
+  "browser_validation": {
+    "application": "/mnt/data/clearpath_work/DIKWP_CLEARPATH_TRANSPARENT_ECONOMY_OS_v1.0.0/DIKWP_CLEARPATH_TRANSPARENT_ECONOMY_OS_v1.0.0.html",
+    "render_method": "playwright.page.set_content",
+    "page_errors": [],
+    "console_errors": [],
+    "unexpected_network_requests": [],
+    "checks": {
+      "default_status_class": "status GO_NOW",
+      "default_status_text": "现在进入",
+      "default_is_go_now": true,
+      "generic_status_class": "status NO_CURRENT_VIABLE_PATH",
+      "generic_status_text": "当前路径不可行",
+      "generic_is_closed": true,
+      "generic_saturation": "36.11",
+      "generic_coverage": "2.8%",
+      "care_status_class": "status GO_NOW",
+      "care_status_text": "现在进入",
+      "care_is_go_now": true,
+      "english_title": "DIKWP ClearPath Transparent Opportunity Economy OS",
+      "language_switch_ok": true,
+      "training_audit_has_risk": true,
+      "training_audit_excerpt": "Risk: 0.952\n\nPaid-slot coverage per marketed seat: 1.5%\n\nTraining revenue: 9600000 | Declared downstream opportunity value: 32400\n\nFEWER_THAN_ONE_REMAINING_PAID_SLOT_PER_TEN_MARKETED_SEATS\nTRAINING_REVENUE_EXCEEDS_DECLARED_DOWNSTREAM_OPPORTUNITY_VALUE\nHIGH_CERTAINTY_MARKETING_IN_A_SATURATED_PATH",
+      "contribution_proposal_only": true,
+      "contribution_zero_auto_payment": true,
+      "contribution_excerpt": "PROPOSAL ONLY\n\nParticipant pool: 43000.00 | Platform: 4000.00 | Commons: 1500.00 | Correction reserve: 1500.00\n\nActor\tDIKWP transition\tShare\tProposed amount\nA\tD->I\t25.3%\t10861.81\nB\tK->W\t35.8%\t15376.92\nC\tW->P\t39.0%\t16761.27\n\nAutomatic payment authority = 0",
+      "screenshot_exists": true
+    },
+    "passed": true
+  },
+  "document_validation": {
+    "cn_docx_pages": 16,
+    "en_docx_pages": 14,
+    "cn_accessibility": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "en_accessibility": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "cn_pdf_preflight": {
+      "path": "/mnt/data/clearpath_work/DIKWP_CLEARPATH_TRANSPARENT_ECONOMY_OS_v1.0.0/reports/DIKWP_CLEARPATH_TRANSPARENT_ECONOMY_REPORT_CN_v1.0.0.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 16,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    "en_pdf_preflight": {
+      "path": "/mnt/data/clearpath_work/DIKWP_CLEARPATH_TRANSPARENT_ECONOMY_OS_v1.0.0/reports/DIKWP_CLEARPATH_TRANSPARENT_ECONOMY_REPORT_EN_v1.0.0.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 14,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    "render_equivalence": {
+      "cn": {
+        "pages": 16,
+        "pdf_render_pages": 16,
+        "mean_normalized_mae": 0.0095229051429481,
+        "max_normalized_mae": 0.015645123381815066
+      },
+      "en": {
+        "pages": 14,
+        "pdf_render_pages": 14,
+        "mean_normalized_mae": 0.009676332665097029,
+        "max_normalized_mae": 0.017508192447621276
+      },
+      "interpretation": "Low raster difference after resolution normalization; separately rendered PDFs preserve the visually inspected DOCX layout."
+    },
+    "visual_review": "All final DOCX pages were inspected; independent PDF renders were compared and contact-sheet reviewed."
+  },
+  "synthetic_demo": {
+    "generic_ai_microsaas": {
+      "decision": "NO_CURRENT_VIABLE_PATH",
+      "saturation_ratio": 36.111111,
+      "remaining_paid_slot_coverage": 0.027692,
+      "opportunity_laundering_risk": 0.9523
+    },
+    "local_sme_workflow_builder": {
+      "decision": "GO_NOW",
+      "base_viability": 0.904549,
+      "robust_floor": 0.690648
+    },
+    "local_care_navigation": {
+      "decision": "GO_NOW",
+      "base_viability": 0.911453,
+      "robust_floor": 0.680154
+    },
+    "portfolio_decision": "FUNDED_ROUTE_FOUND",
+    "scope": "SYNTHETIC_FIXTURES_NOT_MARKET_FORECASTS"
+  },
+  "hard_boundaries": {
+    "automatic_external_action_authority": 0,
+    "automatic_employment_decision_authority": 0,
+    "automatic_payment_authority": 0,
+    "person_level_worth_score": null,
+    "route_closure_is_person_closure": false
+  },
+  "limitations": [
+    "Market inputs are user declarations or synthetic fixtures and are not independently verified by the core.",
+    "NO_CURRENT_VIABLE_PATH is route-specific and time-bounded; it is not a statement about human worth or permanent potential.",
+    "The bounded state exploration is not a universal mathematical proof.",
+    "The system is not an employment, investment, legal, credit, welfare, or wage-setting decision system."
+  ]
+}

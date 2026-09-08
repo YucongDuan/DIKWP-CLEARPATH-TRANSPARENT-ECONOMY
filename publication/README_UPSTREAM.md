@@ -1,7 +1,3 @@
-[English](README.md) · [中文](README_CN.md) · [Choose a tool](ECOSYSTEM.md) · [Research directory](https://github.com/YucongDuan/YucongDuan/blob/main/REPOSITORY_DIRECTORY.md)
-
-[![Tests](https://github.com/YucongDuan/DIKWP-CLEARPATH-TRANSPARENT-ECONOMY/actions/workflows/ci.yml/badge.svg)](https://github.com/YucongDuan/DIKWP-CLEARPATH-TRANSPARENT-ECONOMY/actions/workflows/ci.yml) · Python 3.10+ · Apache-2.0
-
 # DIKWP ClearPath Transparent Opportunity Economy OS
 
 **Show the paid demand before selling the skill.**
@@ -68,14 +64,3 @@ person_level_worth_score = null
 ## License
 
 Apache License 2.0. See `LICENSE`.
-
-## Download, run and verify
-
-- [Versioned release and original full delivery](https://github.com/YucongDuan/DIKWP-CLEARPATH-TRANSPARENT-ECONOMY/releases/tag/v1.0.0)
-- [Offline browser app](DIKWP_CLEARPATH_TRANSPARENT_ECONOMY_OS_v1.0.0.html) — download the source archive, extract it, then open this HTML file locally. GitHub's file viewer displays source.
-- [Publication verification](publication/VALIDATION_2026-09-08.md): **30 local tests passed** on 8 September 2026.
-- [Source](src/) · [Tests](tests/) · [Archive provenance](publication/PROVENANCE.json)
-
-## Contribute a reproducible result
-
-Run an example, report a failing case with its expected result, or add a documented extension. Use synthetic or anonymized inputs. If useful, star the repository, cite its version and share its canonical link. See [CONTRIBUTING.md](CONTRIBUTING.md).

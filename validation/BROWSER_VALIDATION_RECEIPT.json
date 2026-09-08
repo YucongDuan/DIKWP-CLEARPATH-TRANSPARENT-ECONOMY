@@ -1,0 +1,29 @@
+{
+  "application": "/mnt/data/clearpath_work/DIKWP_CLEARPATH_TRANSPARENT_ECONOMY_OS_v1.0.0/DIKWP_CLEARPATH_TRANSPARENT_ECONOMY_OS_v1.0.0.html",
+  "render_method": "playwright.page.set_content",
+  "page_errors": [],
+  "console_errors": [],
+  "unexpected_network_requests": [],
+  "checks": {
+    "default_status_class": "status GO_NOW",
+    "default_status_text": "现在进入",
+    "default_is_go_now": true,
+    "generic_status_class": "status NO_CURRENT_VIABLE_PATH",
+    "generic_status_text": "当前路径不可行",
+    "generic_is_closed": true,
+    "generic_saturation": "36.11",
+    "generic_coverage": "2.8%",
+    "care_status_class": "status GO_NOW",
+    "care_status_text": "现在进入",
+    "care_is_go_now": true,
+    "english_title": "DIKWP ClearPath Transparent Opportunity Economy OS",
+    "language_switch_ok": true,
+    "training_audit_has_risk": true,
+    "training_audit_excerpt": "Risk: 0.952\n\nPaid-slot coverage per marketed seat: 1.5%\n\nTraining revenue: 9600000 | Declared downstream opportunity value: 32400\n\nFEWER_THAN_ONE_REMAINING_PAID_SLOT_PER_TEN_MARKETED_SEATS\nTRAINING_REVENUE_EXCEEDS_DECLARED_DOWNSTREAM_OPPORTUNITY_VALUE\nHIGH_CERTAINTY_MARKETING_IN_A_SATURATED_PATH",
+    "contribution_proposal_only": true,
+    "contribution_zero_auto_payment": true,
+    "contribution_excerpt": "PROPOSAL ONLY\n\nParticipant pool: 43000.00 | Platform: 4000.00 | Commons: 1500.00 | Correction reserve: 1500.00\n\nActor\tDIKWP transition\tShare\tProposed amount\nA\tD->I\t25.3%\t10861.81\nB\tK->W\t35.8%\t15376.92\nC\tW->P\t39.0%\t16761.27\n\nAutomatic payment authority = 0",
+    "screenshot_exists": true
+  },
+  "passed": true
+}

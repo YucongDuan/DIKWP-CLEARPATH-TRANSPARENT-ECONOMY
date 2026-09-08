@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dikwp.example/schemas/clearpath-analysis-v1.json",
+  "title": "ClearPath Route Analysis",
+  "type": "object",
+  "required": [
+    "system", "version", "decision_status", "decision_scope", "base_viability",
+    "robust_floor", "weighted_mean", "hard_closure_reasons", "conditions_to_reopen",
+    "world_results", "automatic_external_action_authority", "person_level_worth_score"
+  ],
+  "properties": {
+    "decision_status": {
+      "enum": ["GO_NOW", "TEST_CHEAPLY", "PIVOT_TO_COMPLEMENT", "NO_CURRENT_VIABLE_PATH"]
+    },
+    "decision_scope": {"const": "THIS_OPPORTUNITY_UNDER_DECLARED_CONSTRAINTS_NOT_HUMAN_WORTH"},
+    "base_viability": {"type": "number", "minimum": 0, "maximum": 1},
+    "robust_floor": {"type": "number", "minimum": 0, "maximum": 1},
+    "weighted_mean": {"type": "number", "minimum": 0, "maximum": 1},
+    "automatic_external_action_authority": {"const": 0},
+    "automatic_employment_decision_authority": {"const": 0},
+    "person_level_worth_score": {"type": "null"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,35 @@
+{
+  "budget": 50000,
+  "commons_rate": 0.03,
+  "contributions": [
+    {
+      "actor_id": "participant-a",
+      "evidence_quality": 0.9,
+      "responsibility": 0.35,
+      "risk_burden": 0.2,
+      "scarcity": 0.45,
+      "transition": "D->I",
+      "verified_outcome_share": 0.55
+    },
+    {
+      "actor_id": "participant-b",
+      "evidence_quality": 0.8,
+      "responsibility": 0.8,
+      "risk_burden": 0.4,
+      "scarcity": 0.75,
+      "transition": "K->W",
+      "verified_outcome_share": 0.7
+    },
+    {
+      "actor_id": "participant-c",
+      "evidence_quality": 0.85,
+      "responsibility": 0.9,
+      "risk_burden": 0.5,
+      "scarcity": 0.8,
+      "transition": "W->P",
+      "verified_outcome_share": 0.75
+    }
+  ],
+  "correction_reserve_rate": 0.03,
+  "platform_rate": 0.08
+}

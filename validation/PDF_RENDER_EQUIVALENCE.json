@@ -1,0 +1,15 @@
+{
+  "cn": {
+    "pages": 16,
+    "pdf_render_pages": 16,
+    "mean_normalized_mae": 0.0095229051429481,
+    "max_normalized_mae": 0.015645123381815066
+  },
+  "en": {
+    "pages": 14,
+    "pdf_render_pages": 14,
+    "mean_normalized_mae": 0.009676332665097029,
+    "max_normalized_mae": 0.017508192447621276
+  },
+  "interpretation": "Low raster difference after resolution normalization; separately rendered PDFs preserve the visually inspected DOCX layout."
+}

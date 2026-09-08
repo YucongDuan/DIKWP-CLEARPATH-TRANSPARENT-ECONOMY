@@ -1,0 +1,27 @@
+{
+  "standard": "TOEP-1000:2026-DRAFT",
+  "implementation": "DIKWP ClearPath Transparent Opportunity Economy OS",
+  "version": "1.0.0",
+  "claim": "AUTHOR_SIDE_SELF_ASSESSMENT_NOT_THIRD_PARTY_CERTIFICATION",
+  "reference_level": "L4-reference",
+  "requirements": {
+    "total": 58,
+    "implemented": 52,
+    "partial": 6,
+    "unsupported": 0
+  },
+  "partial_items": [
+    "production-grade signed opportunity evidence",
+    "independent buyer or funder confirmation",
+    "cross-institution revocation propagation",
+    "jurisdiction-specific labour and consumer protection profiles",
+    "differentially private population supply estimation",
+    "longitudinal real-world calibration"
+  ],
+  "hard_boundaries": {
+    "automatic_external_action_authority": 0,
+    "automatic_employment_decision_authority": 0,
+    "automatic_payment_authority": 0,
+    "person_level_worth_score": null
+  }
+}

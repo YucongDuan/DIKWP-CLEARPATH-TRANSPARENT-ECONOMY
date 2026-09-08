@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: DIKWP ClearPath Transparent Opportunity Economy OS
+message: Please cite this software and its versioned release.
+type: software
+version: 1.0.0
+date-released: 2026-09-07
+license: Apache-2.0
+authors:
+  - name: DIKWP Research Programme contributors
